@@ -1,0 +1,19 @@
+name: SaveCords
+version: 1.0
+author: PieMonsterEater
+main: PieMonsterEater.SaveCords.Main
+description: Allows players to save the coords they are at and name them
+prefix: Save Cords
+commands:
+  setCords:
+    description: Notes down a position and adds it to the list of cords the player has saved alongside a name
+    usage: /<command> [positionName]
+  listCords:
+    description: Shows the player the cords they have saved
+    usage: /<command>
+  seeCords:
+    description: Displays the cords for the location name entered
+    usage: /<command> [positionName]
+  removeCords:
+    description: Has the player enter the name of a saved location and remove it
+    usage: /<command> [positionName]
