@@ -1,4 +1,4 @@
-package PieMonsterEater.SaveCords;
+package net.piescode.SaveCoords;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -62,7 +62,7 @@ public class Main extends JavaPlugin {
 				
 				p.sendMessage("Saved location " + args[0] + " to x: " + p.getLocation().getBlockX() + " y: " + p.getLocation().getBlockY() + " z: " + p.getLocation().getBlockZ());
 				return true;
-			} else p.sendMessage("§4 You must give your coords a name!");
+			} else p.sendMessage("Â§4 You must give your coords a name!");
 			}
 			} else if(command.getName().equals("listCords")) {
 				if(sender instanceof Player) {
@@ -75,7 +75,7 @@ public class Main extends JavaPlugin {
 						p.sendMessage(key);
 					}
 					return true;
-					} else p.sendMessage("§4You have not noted down any cords!");
+					} else p.sendMessage("Â§4You have not noted down any cords!");
 				}
 			} else if(command.getName().equals("seeCords")) {
 				if(sender instanceof Player) {
@@ -87,9 +87,9 @@ public class Main extends JavaPlugin {
 					if(m.keySet().size() != 0 && m.get(args[0]) != null) {
 					p.sendMessage(args[0] + ": " + m.get(args[0]));
 					} else {
-						p.sendMessage("§4No cords were found with name: " + args[0]);
+						p.sendMessage("Â§4No cords were found with name: " + args[0]);
 					}
-				} else p.sendMessage("§4You have to specify the name of the coords!");
+				} else p.sendMessage("Â§4You have to specify the name of the coords!");
 				}
 				return true;
 			} else if(command.getName().equals("removeCords")) {
@@ -118,9 +118,9 @@ public class Main extends JavaPlugin {
 							e.printStackTrace();
 						}
 						
-						p.sendMessage("§aSuccessfully removed " + key + " with value " + cords);
+						p.sendMessage("Â§aSuccessfully removed " + key + " with value " + cords);
 					} else p.sendMessage("No cords with name " + args[0] + " were found!");
-				} else p.sendMessage("§4You have to specify the name of the coords!");
+				} else p.sendMessage("Â§4You have to specify the name of the coords!");
 				}
 			}
 		return false;
