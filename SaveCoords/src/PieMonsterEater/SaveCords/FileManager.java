@@ -1,4 +1,4 @@
-package PieMonsterEater.SaveCords;
+package net.piescode.SaveCoords;
 
 import java.io.File;
 import java.io.IOException;
