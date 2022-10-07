@@ -1,4 +1,4 @@
-package PieMonsterEater.SaveCords;
+package net.piescode.SaveCords;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
