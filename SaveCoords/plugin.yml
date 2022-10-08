@@ -1,19 +1,24 @@
-name: SaveCords
-version: 1.0
-author: PieMonsterEater
-main: PieMonsterEater.SaveCords.Main
-description: Allows players to save the coords they are at and name them
-prefix: Save Cords
+name: SaveCoords
+version: 1.1
+author: Pie@piescode.net
+website: https://www.piescode.net
+main: net.piescode.SaveCoords.Main
+description: Allows players to save the coordinates they are at and give them a name. Allows players to get a list of the names of the coords they have saved. Type in the name of a set of coordinates to see the coords themselves, as well as remove coordinates from thier saved list.
+prefix: Save Coords
 commands:
-  setCords:
-    description: Notes down a position and adds it to the list of cords the player has saved alongside a name
+  setCoords:
+    description: Notes down a position and adds it to the list of coords the player has saved to the server with the name entered
     usage: /<command> [positionName]
-  listCords:
-    description: Shows the player the cords they have saved
+    aliases: 'setcords'
+  listCoords:
+    description: Shows the player the names of all coords the coords they have saved on the server
     usage: /<command>
-  seeCords:
-    description: Displays the cords for the location name entered
+    aliases: 'listcords'
+  seeCoords:
+    description: Displays the coords for the location name entered
     usage: /<command> [positionName]
-  removeCords:
-    description: Has the player enter the name of a saved location and remove it
+    aliases: ['seecords', 'displaycoords', 'displaycords']
+  removeCoords:
+    description: Has the player enter the name of a saved location and removes it from the saved list
     usage: /<command> [positionName]
+    aliases: ['removecords', 'rmcoords', 'rmcords']
