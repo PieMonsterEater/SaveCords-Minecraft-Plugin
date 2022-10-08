@@ -10,12 +10,13 @@ import org.bukkit.entity.Player;
 public class FileManager {
 	private static YamlConfiguration msg;
 	
+	//Checks to make sure a coordinate save file exists for the user, and if not makes a new file in the form <playerName>-Cords.yml and formats it to have "keys" as the top comment
 	public static void checkFiles(Player p){
         if(!Main.getInst().getDataFolder().exists()){
             Main.getInst().getDataFolder().mkdir();
         }
-        if(!new File(Main.getInst().getDataFolder(), p.getDisplayName() + "-Cords.yml").exists()){
-        	File f = new File(Main.getInst().getDataFolder(), p.getDisplayName() + "-Cords.yml");
+        if(!new File(Main.getInst().getDataFolder(), p.getUniqueId().toString() + "-Cords.yml").exists()){
+        	File f = new File(Main.getInst().getDataFolder(), p.getUniqueId().toString() + "-Cords.yml");
             FileConfiguration playerData = YamlConfiguration.loadConfiguration(f);
             
             playerData.createSection("keys");
